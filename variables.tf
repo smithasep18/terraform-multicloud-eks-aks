@@ -41,3 +41,20 @@ variable "azure_vnet_cidr" {
 variable "azure_subnet_cidr" {
   default = "10.1.1.0/24"
 }
+
+variable "azure_subscription_id" {
+  type = string
+}
+
+variable "azure_tenant_id" {
+  type = string
+}
+
+variable "azure_client_id" {
+  type = string
+}
+
+variable "azure_client_secret" {
+  type      = string
+  sensitive = true
+}
