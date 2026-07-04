@@ -62,3 +62,11 @@ variable "azure_client_secret" {
 variable "azure_gateway_subnet_cidr" {
   default = "10.1.255.0/27"
 }
+
+variable "azure_service_cidr" {
+  default = "10.2.0.0/16"
+}
+
+variable "azure_dns_service_ip" {
+  default = "10.2.0.10"
+}

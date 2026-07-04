@@ -62,6 +62,8 @@ module "azure_aks" {
   location            = module.azure_rg.location
   resource_group_name = module.azure_rg.resource_group_name
   subnet_id           = module.azure_network.subnet_id
+  service_cidr   = var.azure_service_cidr
+  dns_service_ip = var.azure_dns_service_ip 
 
   depends_on = [module.azure_network]
 }
