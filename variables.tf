@@ -58,3 +58,7 @@ variable "azure_client_secret" {
   type      = string
   sensitive = true
 }
+
+variable "azure_gateway_subnet_cidr" {
+  default = "10.1.255.0/27"
+}

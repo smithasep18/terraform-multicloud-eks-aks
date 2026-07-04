@@ -50,6 +50,7 @@ module "azure_network" {
   vnet_address_space      = [var.azure_vnet_cidr]
   subnet_name             = "aks-subnet"
   subnet_address_prefixes = [var.azure_subnet_cidr]
+  gateway_subnet_address_prefixes = [var.azure_gateway_subnet_cidr]
 
   depends_on = [module.azure_rg]
 }

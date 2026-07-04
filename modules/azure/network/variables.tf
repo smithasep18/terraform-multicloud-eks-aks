@@ -13,3 +13,7 @@ variable "subnet_name" {}
 variable "subnet_address_prefixes" {
   type = list(string)
 }
+
+variable "gateway_subnet_address_prefixes" {
+  type = list(string)
+}

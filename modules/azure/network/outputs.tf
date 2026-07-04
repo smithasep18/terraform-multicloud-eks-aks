@@ -9,3 +9,7 @@ output "vnet_id" {
 output "vnet_name" {
   value = azurerm_virtual_network.main.name
 }
+
+output "gateway_subnet_id" {
+  value = azurerm_subnet.gateway.id
+}
